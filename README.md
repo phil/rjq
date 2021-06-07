@@ -1,6 +1,18 @@
 # rjq
 A simple ruby app to make working with jSON in the command line easy.
 
+## Should I use this?
+
+_Maybe_, it's random software that you've downloaded from the internet, 
+but it is open source, and it's only 5 lines of code. Lets face it, if
+you're happy downloading scripts, you either know what you're doing, or
+you should be thinking hard about weather this is a good idea..
+
+### What can go wrong?
+
+It's untested. It uses Ruby's `eval()` method, so it's running whatever 
+arbritary code _you_ type in. If you're happy with this, good on you.
+
 ## Requirements
 
 Any OS that runs a bash/zsh like terminal shell.
@@ -11,7 +23,8 @@ Copy `bin/rjq` to a directory that is in your `$PATH`
 
 ## Using
 
-Simply pipe the JSON file into `rjq` and write ruby script as it would be if called on the parsed JSON.
+Simply pipe the JSON file into `rjq` and write ruby script 
+as it would be if called on the parsed JSON.
 
 E.g., Get each of the top level keys:
 
