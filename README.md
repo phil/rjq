@@ -16,7 +16,7 @@ Simply pipe the JSON file into `rjq` and write ruby script as it would be if cal
 E.g., Get each of the top level keys:
 
 ```
-~/ curl https://www.gov.uk/bank-holidays.json | rj ".keys"
+~/ curl https://www.gov.uk/bank-holidays.json | rjq ".keys"
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 15124  100 15124    0     0   162k      0 --:--:-- --:--:-- --:--:--  162k
@@ -27,7 +27,7 @@ northern-ireland
 
 E.g., Get each bank holiday with date, in England and Wales, and show if bunting is required:
 ```
-curl https://www.gov.uk/bank-holidays.json | rj "['england-and-wales']['events'].map{|e| %(#{e['title']} #{e['date']} #{'🎉' if e['bunting']} ) }"
+curl https://www.gov.uk/bank-holidays.json | rjq "['england-and-wales']['events'].map{|e| %(#{e['title']} #{e['date']} #{'🎉' if e['bunting']} ) }"
 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
