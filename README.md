@@ -19,7 +19,7 @@ Any OS that runs a bash/zsh like terminal shell.
 
 ## Installing
 
-Copy `bin/rjq` to a directory that is in your `$PATH`
+Copy `bin/rjq` to a directory that is in your `$PATH`. make sure you set the file to have executable permissions.
 
 ## Using
 
