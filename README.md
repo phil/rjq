@@ -13,6 +13,12 @@ you should be thinking hard about weather this is a good idea..
 It's untested. It uses Ruby's `eval()` method, so it's running whatever 
 arbritary code _you_ type in. If you're happy with this, good on you.
 
+### Why not just use `jq`?
+
+Have _you_ tried to use `jq`? I mean, it's a fantastic tool, fast, and reliable. 
+But when you have to re-read the docs everytime you want to just map over a for single key,
+and then give up and try and find a cheatsheet that does what you want to do … well, yeah.
+
 ## Requirements
 
 Any OS that runs a bash/zsh like terminal shell.
