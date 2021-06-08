@@ -1,5 +1,5 @@
 # rjq
-A simple ruby app to make working with jSON in the command line easy.
+A simple Ruby app to make working with jSON in the command line easy.
 
 ## Should I use this?
 
@@ -21,7 +21,8 @@ and then give up and try and find a cheatsheet that does what you want to do …
 
 ## Requirements
 
-Any OS that runs a bash/zsh like terminal shell.
+- Any OS that runs a bash/zsh like terminal shell.
+- Ruby
 
 ## Installing
 
